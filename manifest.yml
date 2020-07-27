@@ -1,5 +1,5 @@
 create-services:
 - name:   "abapEnvironmentPipeline"
   broker: "abap-trial"
-  plan:   "16_abap_64_db"
+  plan:   "shared"
   parameters: "{ \"admin_email\" : \"ashok.thota9@gmail.com\", \"description\" : \"System for ABAP Pipeline\" }"

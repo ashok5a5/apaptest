@@ -1,0 +1,19 @@
+general:
+  cfApiEndpoint: 'https://api.cf.us10.hana.ondemand.com'
+  cfOrg: 'cc48e02etrial'
+  cfSpace: 'dev'
+  cfCredentialsId: '415f9193-98d3-4cab-96b3-8d0785c401c7'
+  cfServiceInstance: 'abapEnvironmentPipeline'
+  cfServiceKeyName: 'jenkins_sap_com_0510'
+stages:
+  Prepare System:
+    cfServiceManifest: 'manifest.yml'
+    cfServiceKeyConfig: 'sap_com_0510.json'
+  Clone Repositories:
+    repositoryNames: ['/DMO/REPO']
+  ATC:
+    atcConfig: 'atcConfig.yml'
+steps:
+  cloudFoundryDeleteService:
+    cfDeleteServiceKeys: true
+

@@ -2,7 +2,7 @@ general:
   cfApiEndpoint: 'https://api.cf.us10.hana.ondemand.com'
   cfOrg: 'cc48e02etrial'
   cfSpace: 'dev'
-  cfCredentialsId: 'c389497-52d5-45b5-a4ed-b541daac12f'
+  cfCredentialsId: '9c389497-52d5-45b5-a4ed-b541daac12f0'
   cfServiceInstance: 'abapEnvironmentPipeline'
   cfServiceKeyName: 'jenkins_sap_com_0510'
 stages:
